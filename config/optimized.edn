@@ -1,0 +1,8 @@
+{
+ :main          demo
+ :output-dir    "out"
+ :output-to     "out/main.js"
+ :optimizations :advanced
+ :externs       ["externs.js"]
+ :infer-externs true
+}
