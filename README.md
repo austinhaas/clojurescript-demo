@@ -5,18 +5,33 @@ My absolutely minimal foundation for a ClojureScript project on Linux/Mac.
 ## Dependencies
 
 * Java
+* Homebrew (Mac only; to install the Clojure CLI tools in the project dir)
 * [Clojure Tools](https://clojure.org/releases/tools)
 * Python 3 (optional)
 
 ## Installation
 
 ### 1. Clone this repo
-`git clone clojurescript-demo`
+``` shell
+git clone clojurescript-demo
+```
 ### 2. cd into the project directory
-`$ cd clojurescript-demo`
+``` shell
+$ cd clojurescript-demo
+```
 ### 3. Install the Clojure CLI tools, if you don't have them installed already.
 I like to install the tools in the project directory, mostly because it makes it easier (for me) to keep them up to date.
-`make install clojure-tools`
+
+``` shell
+make install clojure-tools
+```
+
+If you don't install the Clojure CLI tools this way, then you'll need to update the makefile to point to the location where your Clojure CLI tools are installed.
+
+If you are on a Mac, and you don't have coreutils installed, you might need to do this first:
+``` shell
+brew install coreutils
+```
 
 ## Config
 
