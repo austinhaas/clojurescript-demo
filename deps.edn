@@ -1,5 +1,5 @@
 {:deps    {org.clojure/clojure       {:mvn/version "1.10.1"}
-           org.clojure/clojurescript {:mvn/version "1.10.822"}
+           org.clojure/clojurescript {:mvn/version "1.10.758"}
            org.clojure/test.check    {:mvn/version "1.1.0"}
            pettomato/devs            {:local/root    "../"
                                       :deps/manifest :deps}}
