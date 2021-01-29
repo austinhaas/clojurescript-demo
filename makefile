@@ -79,6 +79,7 @@ dev-repl : ## Build with dev settings, watch src for changes, start REPL, and op
 	--main cljs.main \
 	--watch src \
 	--compile-opts $(config-dir)/dev.edn \
+	--compile \
 	--repl
 
 .PHONY: dev-proc
