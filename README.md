@@ -23,7 +23,7 @@ $ cd clojurescript-demo
 I like to install the tools in the project directory, mostly because it makes it easier (for me) to keep them up to date.
 
 ``` shell
-make install clojure-tools
+make install-clojure-tools
 ```
 
 If you don't install the Clojure CLI tools this way, then you'll need to update the makefile to point to the location where your Clojure CLI tools are installed.
