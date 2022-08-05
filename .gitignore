@@ -1,0 +1,8 @@
+/clojure
+/pom.xml
+/.eastwood
+/.cljs-test-runner-out
+/.cljs_node_repl
+/.cpcache
+/out
+/target
