@@ -66,7 +66,7 @@ Open browser console.
 
 You should see "ClojureScript demo project started"
 
-#### Workflow #2 (what might be easiest to get started)
+#### Workflow #2 (which may be easiest to get started)
 
 This command will:
 * compile with dev settings
@@ -84,6 +84,6 @@ You should see "ClojureScript demo project started"
 
 ## License
 
-Copyright © 2021 Austin Haas
+Copyright © 2022 Austin Haas
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
