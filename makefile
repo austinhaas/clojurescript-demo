@@ -129,6 +129,7 @@ serve : ## Launch a webserver (requires python3)
 .PHONY: clean
 clean :
 	rm -rf .cljs-test-runner-out
+	rm -rf .cljs_node_repl
 	rm -rf .cpcache
 	rm -rf out
 	rm -rf target
