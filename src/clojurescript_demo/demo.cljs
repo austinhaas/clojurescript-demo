@@ -1,4 +1,4 @@
-(ns demo
+(ns clojurescript-demo.demo
   (:require
    [goog.dom :as gdom]))
 

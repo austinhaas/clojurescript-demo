@@ -1,5 +1,5 @@
 {
- :main          demo
+ :main          clojurescript-demo.demo
  :output-dir    "out"
  :output-to     "out/main.js"
  :optimizations :none
