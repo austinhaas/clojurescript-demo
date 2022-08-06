@@ -1,6 +1,8 @@
 {
- :main          clojurescript-demo.demo
- :output-dir    "out"
- :output-to     "out/main.js"
- :optimizations :none
-}
+ :main                  clojurescript-demo.demo
+ :output-dir            "out"
+ :output-to             "out/main.js"
+ :optimizations         :none
+ :source-map            true
+ :source-map-timestamp  true
+ }
