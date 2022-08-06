@@ -4,7 +4,7 @@
 #===============================================================================
 # Config (that a user might actually change)
 
-clojure-tools-version := 1.10.1.763
+clojure-tools-version := 1.11.1.1149
 
 config-dir := config
 
