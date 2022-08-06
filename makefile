@@ -73,7 +73,7 @@ dev-watch : ## Build with dev settings and watch src for changes.
 	--compile
 
 .PHONY: dev-repl
-dev-repl : ## Build with dev settings, watch src for changes, start REPL, and open browser
+dev-repl : ## Build with dev settings, watch src for changes, start REPL, and open browser.
 	$(clojure) \
 	-M \
 	--main cljs.main \
