@@ -1,13 +1,13 @@
 # clojurescript-demo
 
-My absolutely minimal foundation for a ClojureScript project on Linux/Mac.
+My minimal foundation for a ClojureScript project on Linux/Mac.
 
 ## Dependencies
 
 * Java
 * Homebrew (Mac only; to install the Clojure CLI tools in the project dir)
 * [Clojure Tools](https://clojure.org/releases/tools)
-* Python 3 (optional)
+* Python 3 (optional; to start a simple webserver)
 
 ## Installation
 
@@ -26,7 +26,7 @@ I like to install the tools in the project directory, mostly because it makes it
 make install-clojure-tools
 ```
 
-If you don't install the Clojure CLI tools this way, then you'll need to update the makefile to point to the location where your Clojure CLI tools are installed.
+If you don't install the Clojure CLI tools this way, then you'll need to update the makefile to point to where your Clojure CLI tools are installed.
 
 If you are on a Mac, and you don't have coreutils installed, you might need to do this first:
 ``` shell
@@ -41,17 +41,17 @@ brew install coreutils
 
 ## Usage
 
-The included makefile provides several useful commands. Run `make` for a list of commands and descriptions.
+The makefile provides several useful commands, which can be displayed by running `make` (without any arguments).
 
 ### Development
 
 #### Workflow #1 (what I use)
 
-This command will:
-* compile with dev settings
-* start a REPL socket server
-* start a webserver
-* recompile if `src` changes
+Start a build process.
+
+* Compile with dev settings.
+* Start a REPL socket server.
+* Recompile if `src` changes.
 
 ```
 $ make dev-proc
@@ -59,6 +59,11 @@ $ make dev-proc
 Connect to the REPL socket server on port 5555.
 
 In the REPL, which should be in the user ns, eval `(browser-repl)`.
+
+Start a webserver.
+```
+$ make serve
+```
 
 Open a browser to localhost:9000.
 
@@ -68,12 +73,14 @@ You should see "ClojureScript demo project started"
 
 #### Workflow #2 (which may be easiest to get started)
 
-This command will:
-* compile with dev settings
-* start a REPL
-* start a webserver
-* open a browser tab to point to the webserver
-* recompile if `src` changes
+
+Start a build process.
+
+* Compile with dev settings.
+* Start a REPL.
+* Start a webserver.
+* Open a browser tab to point to the webserver.
+* Recompile if `src` changes.
 
 ```
 make dev-repl
