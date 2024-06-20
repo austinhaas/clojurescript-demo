@@ -4,16 +4,12 @@
 #===============================================================================
 # Config (that a user might actually change)
 
-clojure-tools-version := 1.11.1.1149
-
 config-dir := config
 
 #-------------------------------------------------------------------------------
 # Config (that is automatically set up)
 
 os := $(shell uname)
-
-clojure-tools-script := linux-install-$(clojure-tools-version).sh
 
 clj := ./clojure/bin/clj
 clojure := ./clojure/bin/clojure
@@ -26,13 +22,10 @@ clojure := ./clojure/bin/clojure
 
 .PHONY: install-clojure-tools
 install-clojure-tools : ## Install the Clojure CLI tools locally in this project directory.
-	curl -O https://download.clojure.org/install/$(clojure-tools-script)
-ifeq ($(os), Darwin)
-	sed -i '' -E 's/^install/ginstall/g' $(clojure-tools-script)
-endif
-	chmod +x $(clojure-tools-script)
-	./$(clojure-tools-script) --prefix clojure
-	rm $(clojure-tools-script)
+	curl -L -O https://github.com/clojure/brew-install/releases/latest/download/posix-install.sh
+	chmod +x posix-install.sh
+	./posix-install.sh --prefix clojure
+	rm posix-install.sh
 
 .PHONY: uninstall-clojure-tools
 uninstall-clojure-tools : ## Uninstall Clojure CLI tools that were installed locally.
