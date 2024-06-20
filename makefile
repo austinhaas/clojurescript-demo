@@ -36,7 +36,7 @@ uninstall-clojure-tools : ## Uninstall Clojure CLI tools that were installed loc
 
 .PHONY: test-clj
 test-clj : ## Run unit tests with the Clojure test runner.
-	$(clojure) -M:test:clj-runner
+	$(clojure) -X:test:clj-runner
 
 .PHONY: test-cljs
 test-cljs : ## Run unit tests with the ClojureScript test runner.
